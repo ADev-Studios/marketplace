@@ -81,10 +81,16 @@ async function loadMarketplace() {
     card.className = "featured-card";
     card.style.backgroundImage = `url(${game.thumbnail})`;
 
+    // Navigate when the card itself is clicked
+    card.addEventListener("click", () => {
+      window.location.href = game.url;
+    });
+
     card.innerHTML = `
       <div class="featured-overlay">
         <h3>${game.name}</h3>
       </div>
+      
     `;
 
     featured.appendChild(card);
