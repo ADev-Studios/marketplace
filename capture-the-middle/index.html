@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capture the Middle — Fly. Stay in the middle. Shoot your friends.</title>
+  <meta name="description" content="Competitive co-op hang gliding. Ride thermals, stay in the middle zone, and be the last one flying.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">Capture the <span>Middle</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="downloads.html">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg">
+      <!-- Fallback gradient + optional splash image -->
+      <img src="assets/splash.png" alt="" onerror="this.style.display='none'">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <!-- Decorative floating islands -->
+    <div class="island island-1" aria-hidden="true"></div>
+    <div class="island island-2" aria-hidden="true"></div>
+    <div class="island island-3" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <h1>Capture the <span class="accent">Middle</span></h1>
+      <p class="tagline">Fly. Stay in the middle. Shoot your friends.</p>
+      <a href="downloads.html" class="btn btn-primary">Play Now</a>
+    </div>
+  </section>
+
+  <section id="how" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">How It Works</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="card-icon" aria-hidden="true">🌬️</span>
+          <h3>Thermals keep you up</h3>
+          <p>Ride rising air currents to stay aloft. Miss them and the void claims you.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon" aria-hidden="true">🎯</span>
+          <h3>Stay in the middle zone</h3>
+          <p>The safe area shrinks. Drift too far and you’re out of the fight.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon" aria-hidden="true">🏆</span>
+          <h3>Last one in the middle wins</h3>
+          <p>Shoot, bump, or out-fly your friends. Only one glider remains.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section controls">
+    <div class="section-inner">
+      <h2 class="section-title">Controls</h2>
+      <ul class="controls-list">
+        <li><span class="key">W</span> <span class="key">A</span> <span class="key">S</span> <span class="key">D</span> Move</li>
+        <li><span class="key">Shift</span> Dive / Boost</li>
+        <li><span class="key">Mouse</span> Aim &amp; Shoot</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2026 Capture the Middle. All rights reserved.</p>
+    <p><a href="downloads.html">Download the game</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
