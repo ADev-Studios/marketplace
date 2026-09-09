@@ -23,24 +23,39 @@ function renderGames(games) {
   games.forEach(game => {
     const card = document.createElement("div");
     card.className = "game-card";
+    card.style.cursor = "pointer";
+
+    // Navigate when the card itself is clicked
+    card.addEventListener("click", () => {
+      window.location.href = game.url;
+    });   
 
     card.innerHTML = `
       <img src="${game.thumbnail}" class="game-thumb">
       <h2>${game.name}</h2>
       <p>${game.description}</p>
 
-      <button class="download-btn" onclick="window.location='${game.downloads.windows}'">
+      <button class="download-btn">
         Download for Windows
       </button>
 
-      <button class="download-btn" onclick="window.location='${game.downloads.linux}'">
+      <button class="download-btn">
         Download for Linux
       </button>
     `;
 
+    // Buttons: stop the click from bubbling to the card
+    card.querySelectorAll(".download-btn").forEach((btn, i) => {
+      const url = i === 0 ? game.downloads.windows : game.downloads.linux;
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        window.location.href = url;
+      });
+    });
+
     grid.appendChild(card);
   });
-}
+}   
 
 // MARKETPLACE LOADER
 async function loadMarketplace() {

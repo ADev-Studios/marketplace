@@ -3,6 +3,7 @@
     "folder": "oldadevlauncher",
     "name": "Old ADev Launcher",
     "description": "No description yet.",
+    "url": "https://adev-studios.github.io/marketplace/capture-the-middle/",
     "version": "1.0",
     "thumbnail": "https://raw.githubusercontent.com/ADev-Studios/Games/main/assets/adevlauncher.png",
     "downloads": {
@@ -14,6 +15,7 @@
     "folder": "aiadw",
     "name": "All In A Days Work!",
     "description": "A game, OK??",
+    "url": "https://adev-studios.github.io/marketplace/capture-the-middle/",
     "version": "1.0",
     "thumbnail": "https://raw.githubusercontent.com/ADev-Studios/Games/main/assets/All-In-A-Days-Work.png",
     "downloads": {
@@ -25,6 +27,7 @@
     "folder": "capture-the-middle",
     "name": "Capture The Middle",
     "description": "Fly a handglider. Stay in the middle. Shoot your friends.",
+    "url": "https://adev-studios.github.io/marketplace/capture-the-middle/",
     "version": "1.0",
     "thumbnail": "https://raw.githubusercontent.com/ADev-Studios/Games/main/assets/Capture-The-Middle.jpeg",
     "downloads": {
