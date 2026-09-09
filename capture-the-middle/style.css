@@ -311,6 +311,7 @@ a:hover {
   font-size: 2.25rem;
   margin-bottom: 1rem;
   display: block;
+  font-weight: 1000;
 }
 
 .card h3 {
@@ -330,21 +331,36 @@ a:hover {
 }
 
 .controls-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem 2rem;
   list-style: none;
-  max-width: 600px;
+  max-width: 520px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.controls-list li {
+.controls-list.ordered li {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  font-weight: 600;
-  font-size: 1.05rem;
+  gap: 1.25rem;
+  padding: 0.9rem 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 1rem;
+  backdrop-filter: blur(8px);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.controls-list.ordered li:hover {
+  border-color: rgba(255, 140, 66, 0.35);
+  transform: translateX(4px);
+}
+
+.controls-list .keys {
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.35rem;
+  min-width: 9.5rem;
 }
 
 .key {
@@ -360,6 +376,24 @@ a:hover {
   font-size: 0.85rem;
   font-weight: 700;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.controls-list .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.controls-list .desc strong {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.controls-list .desc span {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
 }
 
 /* Footer */
