@@ -90,7 +90,6 @@ async function loadMarketplace() {
       <div class="featured-overlay">
         <h3>${game.name}</h3>
       </div>
-      
     `;
 
     featured.appendChild(card);
