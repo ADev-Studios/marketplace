@@ -31,8 +31,8 @@
     "version": "1.0",
     "thumbnail": "https://raw.githubusercontent.com/ADev-Studios/Games/main/assets/Capture-The-Middle.jpeg",
     "downloads": {
-      "windows": "https://github.com/ADev-Studios/Games/releases/download/AllInADaysWork/cap-windows.exe",
-      "linux": "https://github.com/ADev-Studios/Games/releases/download/AllInADaysWork/cap-linux.x86_64"
+      "windows": "https://github.com/ADev-Studios/Games/releases/download/AllInADaysWork/aiadw-windows.exe",
+      "linux": "https://github.com/ADev-Studios/marketplace/releases/download/CaptureTheMiddle/Multiplayer-test.x86_64"
     }
   }
 ]
